@@ -1,4 +1,35 @@
 {
+  "appInfo" : {
+    "_id" : "wm-getAppInfo-wm.DeviceVariable-1444134876543",
+    "name" : "appInfo",
+    "owner" : "App",
+    "category" : "wm.DeviceVariable",
+    "dataBinding" : [ ],
+    "service" : "device",
+    "operation" : "getAppInfo",
+    "dataSet" : {
+      "appversion" : "X.X.X",
+      "cordovaversion" : "X.X.X"
+    },
+    "startUpdate" : true
+  },
+  "deviceInfo" : {
+    "_id" : "wm-deviceInfo-getDeviceInfo-wm.DeviceVariable-1444134852623",
+    "name" : "deviceInfo",
+    "owner" : "App",
+    "category" : "wm.DeviceVariable",
+    "dataBinding" : [ ],
+    "service" : "device",
+    "operation" : "getDeviceInfo",
+    "dataSet" : {
+      "connectionType" : "NONE",
+      "deviceModel" : "DEVICEMODEL",
+      "os" : "DEVICEOS",
+      "osVersion" : "X.X.X",
+      "deviceUUID" : "DEVICEUUID"
+    },
+    "startUpdate" : true
+  },
   "goToPage_Main" : {
     "_id" : "wm-wm.NavigationVariable1389180517517",
     "name" : "goToPage_Main",
@@ -18,36 +49,5 @@
     "type" : "string",
     "isList" : false,
     "saveInPhonegap" : false
-  },
-  "deviceInfo": {
-    "owner": "App",
-    "dataSet": {
-      "connectionType": "NONE",
-      "deviceModel": "DEVICEMODEL",
-      "os": "DEVICEOS",
-      "osVersion": "X.X.X",
-      "deviceUUID": "DEVICEUUID"
-    },
-    "dataBinding": [],
-    "service": "device",
-    "operation": "getDeviceInfo",
-    "startUpdate": true,
-    "category": "wm.DeviceVariable",
-    "_id": "wm-deviceInfo-getDeviceInfo-wm.DeviceVariable-1444134852623",
-    "name": "deviceInfo"
-  },
-  "appInfo": {
-    "owner": "App",
-    "dataSet": {
-      "appversion": "X.X.X",
-      "cordovaversion": "X.X.X"
-    },
-    "dataBinding": [],
-    "service": "device",
-    "operation": "getAppInfo",
-    "startUpdate": true,
-    "category": "wm.DeviceVariable",
-    "_id": "wm-getAppInfo-wm.DeviceVariable-1444134876543",
-    "name": "appInfo"
   }
 }

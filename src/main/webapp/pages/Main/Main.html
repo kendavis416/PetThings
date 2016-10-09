@@ -1,10 +1,8 @@
-<wm-page data-ng-controller="MainPageController" name="mainpage">
-  <wm-left-panel content="leftnav" columnwidth="2" name="left_panel1"></wm-left-panel>
-  <wm-mobile-navbar name="mobile_navbar1" title="Title" leftnavpaneliconclass="wi wi-menu" backbutton="false">
-    <wm-anchor caption="" name="AddLink" iconclass="wi wi-plus"></wm-anchor>
-  </wm-mobile-navbar>
-  <wm-content name="content1">
-    <wm-page-content columnwidth="12" name="page_content1"></wm-page-content>
-  </wm-content>
-  <wm-mobile-tabbar dataset="home,music,edit" name="mobile_tabbar1"></wm-mobile-tabbar>
+<wm-page data-ng-controller="MainPageController" name="page1">
+    <wm-left-panel content="leftnav" name="left_panel1"></wm-left-panel>
+    <wm-mobile-navbar name="mobile_navbar1"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1"></wm-page-content>
+    </wm-content>
+    <wm-mobile-tabbar dataset="home,star,music" name="mobile_tabbar1" on-select="mobile_tabbar1Select($event, $scope, $item)"></wm-mobile-tabbar>
 </wm-page>
